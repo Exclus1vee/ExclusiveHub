@@ -1,0 +1,58 @@
+if game.PlaceId == 155615604 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Exclusive Hub", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+    local Tab = Window:MakeTab({
+        Name = "Prison Life",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local Section = Tab:AddSection({
+        Name = "Scripts"
+    })
+    
+    Tab:AddButton({
+        Name = "Button!",
+        Callback = function()
+                  print("button pressed")
+                  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+            end    
+    })
+    
+    local Section = Tab:AddSection({
+        Name = "Others"
+    })
+    
+    Tab:AddButton({
+        Name = "Button!",
+        Callback = function()
+                  print("button pressed")
+                  loadstring(game:HttpGetAsync("https://pastebin.com/raw/z78X72ix"))()
+            end    
+    })
+    elseif game.PlaceId == 4201429814 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Exclusive Hub", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})    
+    
+    local Tab = Window:MakeTab({
+        Name = "RCG",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local Section = Tab:AddSection({
+        Name = "Scripts"
+    })
+    
+    Tab:AddButton({
+        Name = "Get All Badges",
+        Callback = function()
+                  print("button pressed")
+                  loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/cheat', true))()
+            end    
+    })
+    
+    
+    end
+    OrionLib:Init()
